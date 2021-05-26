@@ -158,7 +158,19 @@ let allNegativeArray = [-8, -6, -4, -2];
 console.log('These are all the positive numbers from mixedNumberArray:', allPositiveNumbers(mixedNumberArray));
 console.log('These are all the positive numbers from allNegativeArray:', allPositiveNumbers(allNegativeArray));
 
-
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+
+// challenge from edabit.com: (https://edabit.com/challenge/bL7hSc6Zh4zZJzGmw)
+// create a function that converts Age in years and returns age in days
+// Note: use 365 day year (ignore leap years), ignore days between last birthday and now, expect only positive integer inputs,
+
+function ageIntoDays(ageInYears) {
+  let ageInDays = ageInYears * 365;
+  return ageInDays
+} // end of ageIntoDays
+
+console.log(`Brett is 36 years old, or ${ageIntoDays(36)} days old!`);
+console.log(`Julie is 10 years old, or ${ageIntoDays(10)} days old!`);
+console.log(`Yoda is 900 years old, or ${ageIntoDays(900)} days old!`);
