@@ -72,7 +72,7 @@ function getLast( array ) {
   } // array is empty, returns undefined
 } // end getLast
 
-let starWarsArray = ['Skywalker', 'Baron Papanoida', 'Jango Fett', 'Kitster', 'Yoda'];
+let starWarsArray = ['Skywalker', 'Baron Papanoida', 'Yoda', 'Jango Fett', 'Kitster', 'Yoda'];
 let emptyArray = [];
 
 console.log('This array should return "Yoda":', getLast(starWarsArray));
@@ -95,9 +95,11 @@ function find( value, array ){
 } //end function find
 
 let starTrekArray = ['Kirk', 'Picard', 'Riker', 'Spock'];
+let primeNumberArray = [2, 3, 5, 7, 11, 13, 17];
 
 console.log("Yoda is a Star Wars character:", find('Yoda', starWarsArray));
 console.log("Yoda is a Star Trek character:", find('Yoda', starTrekArray));
+console.log("Is the number 7 included in this array:", find(7, primeNumberArray));
 
 // ----------------------
 // Stretch Goals
