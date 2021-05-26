@@ -61,8 +61,22 @@ console.log( 'isPositive(-3) - should say false', isPositive(-3) );
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
 function getLast( array ) {
+  console.log('in getLast');
+  if (array.length > 0) {
+  // alternate if statement, an empty array will return 0 (falsey), so correct code would still return
+  //if (array.length) {
+    return array[array.length - 1];
+  } //array has contents, returns last item
+  else {
+    return 'undefined';
+  } // array is empty, returns undefined
+} // end getLast
 
-}
+let starWarsArray = ['Skywalker', 'Baron Papanoida', 'Jango Fett', 'Kitster', 'Yoda'];
+let emptyArray = [];
+
+console.log('This array should return "Yoda":', getLast(starWarsArray));
+console.log('This array is empty, and should return "undefined":', getLast(emptyArray));
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
