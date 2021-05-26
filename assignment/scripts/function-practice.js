@@ -137,7 +137,26 @@ console.log('The sum of 2, 3, 5, 7, 11, 13, 17 is:', sumAll(primeNumberArray));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+let positiveNumberArray = [];
 
+function allPositiveNumbers(inputArray) {
+  positiveNumberArray = [];
+  for (let i=0; i<inputArray.length; i++) {
+    if (inputArray[i] > 0) {
+      positiveNumberArray.push(inputArray[i]);
+    } // adds positive number to new array
+    else {
+      console.log('This number was not positive:', inputArray[i]);
+    } // logs non-positive numbers
+  } // end of for loop
+  return positiveNumberArray;
+} // end of allPositiveNumbers
+
+let mixedNumberArray = [1, 7, 0, -8, -1, 10];
+let allNegativeArray = [-8, -6, -4, -2];
+
+console.log('These are all the positive numbers from mixedNumberArray:', allPositiveNumbers(mixedNumberArray));
+console.log('These are all the positive numbers from allNegativeArray:', allPositiveNumbers(allNegativeArray));
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
