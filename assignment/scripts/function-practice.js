@@ -82,8 +82,22 @@ console.log('This array is empty, and should return "undefined":', getLast(empty
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
+  for (let eachItem of array) {
+    if (eachItem === value) {
+      console.log(`Hooray, we found ${value}!!`);
+      return true;
+    } // returns true if this array item matches value
+    else {
+      console.log(`${value} does not match ${eachItem}`);
+    }
+  } // end for loop
+  return false;
+} //end function find
 
-}
+let starTrekArray = ['Kirk', 'Picard', 'Riker', 'Spock'];
+
+console.log("Yoda is a Star Wars character:", find('Yoda', starWarsArray));
+console.log("Yoda is a Star Trek character:", find('Yoda', starTrekArray));
 
 // ----------------------
 // Stretch Goals
