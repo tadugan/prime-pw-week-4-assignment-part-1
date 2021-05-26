@@ -17,7 +17,7 @@ console.log('Test - should say "Hello World!"', hello());
 function helloName( name ) {
   // return "Hello, " + name + '!';
   return `Hello, ${name}!`
-}
+} //end helloName
 // Remember to call the function to test
 console.log(helloName('Tim Dugan'));
 
@@ -25,16 +25,20 @@ console.log(helloName('Tim Dugan'));
 function addNumbers( firstNumber, secondNumber ) {
   // return firstNumber + secondNumber;
   return firstNumber + secondNumber;
-}
+} // end addNumbers
 console.log('2 + 2 =', addNumbers(2, 2));
 console.log('37 + 29 =', addNumbers(37, 29));
 console.log('123456 + 654321 =', addNumbers(123456, 654321));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
-}
-
+function multiplyThree(num0, num1, num2){
+  console.log('in multiplyThree');
+  let totalNumber = num0 * num1 * num2;
+  return totalNumber;
+} //end multiplyThree
+console.log("3 x 3 x 3 =", multiplyThree(3, 3, 3));
+console.log("10 x 11 x 12 =", multiplyThree(10, 11, 12));
+console.log("1,000,000 x 1,000,000 x 0 =", multiplyThree(1000000, 1000000, 0));
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
