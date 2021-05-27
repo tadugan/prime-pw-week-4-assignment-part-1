@@ -63,7 +63,7 @@ console.log( 'isPositive(-3) - should say false', isPositive(-3) );
 function getLast( array ) {
   console.log('in getLast');
   if (array.length > 0) {
-  // alternate if statement, an empty array will return 0 (falsey), so correct code would still return
+  // alternate if statement, an empty array will return falsey, so correct code would still return
   //if (array.length) {
     return array[array.length - 1];
   } //array has contents, returns last item
